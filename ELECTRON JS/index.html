@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Roasting Alfa Edition</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="card text-center">
+        <div class="card-header" style="background-color: black; color: white;">
+          <h2>Roasting App</h2>
+        </div>
+        <div class="card-body">
+            <div class="container">
+                <form id="myForm">
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="input" placeholder="" type="text">
+                                <label for="input">Ip Adress :</label>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div class="card mb-3">
+                                <button type="button" id="submitButton" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <H5>Running On: [<span id="ipaddress"></span>] | Status: [<span id="status">status</span>]</H5>
+                    <div class="row">
+                        <div class="col-10">
+                            <div class="card-body">
+                                <div>
+                                    <canvas id="grafik"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <div>
+                                <!-- <div class="card-body"> -->
+                                    <label><h4><span id="waktu"> 00:00:00 </span></h4></label>
+                                <!-- </div> -->
+                            </div>
+                            <br>
+                            <div>
+                                <!-- <div class="card-body"> -->
+                                     <label><h4><span id="suhu1">-</span> °C </h4></label>
+                                <!-- </div> -->
+                            </div>
+                            <br>
+                            <div>
+                                <!-- <div class="card-body"> -->
+                                    <label><h4><span id="suhu2">-</span> °C</h4></label>
+                                <!-- </div> -->
+                            </div>
+                            <br>
+                            <div class="card">
+                                <button type="button" class="btn btn-danger" id="hidup">Start</button>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <button type="button" class="btn btn-secondary" id="reset">Reset</button>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <button type="button" class="btn btn-dark" id="refresh">Refresh</button>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <button type="button" class="btn btn-success" id="simpan">Save</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+    </div>
+    <div class="card-footer text-body-secondary">
+        <div class="foo"> App Roasting Alfa Edition | By Poitech </div>
+    </div>
+    </div>
+
+    <!-- <script src="./graph.js"></script> -->
+    <!-- <script src="./scrip.js"></script> -->
+    <script src="./main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+        .foo{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .container{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: center;
+            /* background-color: rgb(110, 110, 110); */
+        }
+        .card-body{
+            background-color: rgb(228, 228, 228);
+        }
+
+    </style>
+</body>
+</html>

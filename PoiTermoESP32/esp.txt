@@ -1,0 +1,17 @@
+
+arduino v1
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json,https://arduino.esp8266.com/stable/package_esp8266com_index.json
+
+esp8266 pilih versi 2.7.4
+esp32 pilih versi 1.0.6
+
+
+//SENSOR 1
+SO = 16
+CS_1 = 27
+SCK_1 = 14
+
+//SENSOR 2
+SO = 5
+CS = 13
+SCK = 12
